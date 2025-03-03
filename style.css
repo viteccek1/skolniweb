@@ -43,8 +43,8 @@ nav ul {
 	background-color: #AF47E8;
 }
 .banner-image {
-	width: 70%;
-	height: 70%;
+	width: 100%;
+	height: 100%;
 	transform: scale(1.1);
 	background-image: url("logo.jpg");
 	background-size: cover;
