@@ -46,7 +46,7 @@ nav ul {
 	width: 100%;
 	height: 100%;
 	transform: scale(1.1);
-	background-image: url("logo.jpg");
+	background-image: url("nahledovka.jpg");
 	background-size: cover;
 	background-position: center;
 	transition: all .5s;
@@ -84,16 +84,97 @@ nav ul {
 	margin-bottom: 20px;
 }
 .features {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
+    display: flex; /* Aktivace flexboxu */
+    flex-wrap: wrap; /* Zajištění zalomení prvků na další řádek při nedostatku místa */
+    justify-content: center; /* Zarovná prvky do středu */
 }
 
-.features {
-	width: 30%;
-	background-color: rgba(105, 105, 105, 0.7);
-	border: 1px solid #ccc;
-	padding: 15px;
-	box-sizing: border-box;
+.feature {
+    width: 30%; /* Každý prvek zabere 30 % šířky */
+    border: 1px solid #ccc; /* Ohraničení pro lepší viditelnost */
+    padding: 15px; /* Vnitřní mezery */
+    box-sizing: border-box; /* Zabrání zvětšování prvku kvůli paddingu */
+
+	*/
+}
+
+.heading {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.heading h2 {
+    font-size: 28px;
+}
+
+.theme-primary {
+    background-color: rgb(84, 153, 51);
+    color: white;
+}
+
+.theme-primary .btn {
+    background-color: white;
+    color: black;
+}
+
+.heading {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.heading h2 {
+    font-size: 28px;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+}
+
+.product-info {
+    padding: 40px;
+    flex: 1;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+.theme-primary {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+    background-color: #99cc22; /* Light background color for the container */
+}
+
+.theme-primary h2 {
+    color: #333; /* Text color for the heading */
+}
+
+.btn {
+    background-color: #a5d61f; /* Initial button background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 15px 30px; /* Padding for the button */
+    text-align: center; /* Center align text */
+    display: inline-block; /* Make the button inline-block for better control */
+    font-size: 16px; /* Font size */
+    margin: 10px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #cfcfc7; /* Darker background color on hover */
 }
