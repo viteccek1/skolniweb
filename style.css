@@ -1,60 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-	font-family: "Fauna One", serif;
-  	font-weight: 400;
-  	font-style: normal;
+    font-family: "Fauna One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h1,h2,h3,h4,h5 {
-	font-family: "Libre Baskerville", serif;
-	font-weight: 700;
-	font-style: normal;
+h1, h2, h3, h4, h5 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
 }
-
 
 #website {
-	max-width: 1200px;
-	margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .logo img {
-	width: 240px;
+    width: 240px;
 }
 
 nav ul {
-	list-style: none;
-	display: flex;
-	gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .banner {
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-	background-color: #AF47E8;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #AF47E8;
+    position: relative;
 }
+
 .banner-image {
-	width: 100%;
-	height: 100%;
-	transform: scale(1.1);
-	background-image: url("nahledovka.jpg");
-	background-size: cover;
-	background-position: center;
-	transition: all .5s;
-	opacity: 1;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    background-image: url("nahledovka.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    opacity: 1;
 }
 
 .banner-image:hover {
-	transform: scale(1);
+    transform: scale(1);
 }
 
 .banner-text {
@@ -64,38 +65,37 @@ nav ul {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-    background-color: rgba(0,0,0,.7);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 0px 30px;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .banner-text h1 {
-	font-size: 48px;
-	font-weight: bold;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .banner-text p {
-	font-size: 24px;
-} 
+    font-size: 24px;
+}
 
 .heading {
-	text-align: center;
-	margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 .features {
-    display: flex; /* Aktivace flexboxu */
-    flex-wrap: wrap; /* Zajištění zalomení prvků na další řádek při nedostatku místa */
-    justify-content: center; /* Zarovná prvky do středu */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .feature {
-    width: 30%; /* Každý prvek zabere 30 % šířky */
-    border: 1px solid #ccc; /* Ohraničení pro lepší viditelnost */
-    padding: 15px; /* Vnitřní mezery */
-    box-sizing: border-box; /* Zabrání zvětšování prvku kvůli paddingu */
-
-	*/
+    width: 30%; 
+    border: 1px solid #ccc;
+    padding: 15px; 
+    box-sizing: border-box; 
 }
 
 .heading {
@@ -115,15 +115,6 @@ nav ul {
 .theme-primary .btn {
     background-color: white;
     color: black;
-}
-
-.heading {
-    text-align: center;
-    padding: 30px 0;
-}
-
-.heading h2 {
-    font-size: 28px;
 }
 
 .product {
@@ -149,32 +140,67 @@ nav ul {
     flex-direction: row-reverse;
 }
 
-
-
 .theme-primary {
-    text-align: center; /* Center align the content */
+    text-align: center;
     padding: 20px;
-    background-color: #99cc22; /* Light background color for the container */
+    background-color: #4CAF50; 
 }
 
 .theme-primary h2 {
-    color: #333; /* Text color for the heading */
+    color: #333; 
 }
 
 .btn {
-    background-color: #a5d61f; /* Initial button background color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    padding: 15px 30px; /* Padding for the button */
-    text-align: center; /* Center align text */
-    display: inline-block; /* Make the button inline-block for better control */
-    font-size: 16px; /* Font size */
-    margin: 10px 2px; /* Margin around the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #a5d61f; 
+    color: white; 
+    border: none;
+    padding: 15px 30px; 
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
     background-color: #cfcfc7; /* Darker background color on hover */
 }
+
+.contact {
+    display: flex;
+    background-color: #e6e6e6;
+}
+
+.contact-box {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  .feature {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-top: 3px solid #4CAF50;
+  }
+  
+  .feature:hover h3 {
+    color: #4CAF50;
+  }
